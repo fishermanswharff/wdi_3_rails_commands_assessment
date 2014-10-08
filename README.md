@@ -7,6 +7,9 @@ Fork, clone, and write your answers directly in this file. Then submit a pull re
 I want to start a new Rails project/app called `BunnyApp`. What command should I type in the terminal?
 rails new BunnyApp --database=postgresql
 
+<!-- I didn't add the -T -->
+rails new BunnyApp --database=postgresql -T
+
 ### Question 2
 <!-- Referenced RailsGuides for this -->
 I want to create a new model called `Bunny`, with the following attributes: name (string), color (string), and age (integer). What command should I type in the terminal?
@@ -20,6 +23,10 @@ the files generated are a db file for mapping our model to a db table, and a mod
 ### Question 4
 
 I want to create a database and make it reflect the new model I created in Question 2. What command(s) should I type in the terminal?
+rake db:migrate
+
+<!-- i didn't get this completely correct, didn't have rake db:create -->
+rake db:create 
 rake db:migrate
 
 ### Question 5
